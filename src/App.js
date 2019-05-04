@@ -10,7 +10,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <div>
           <p>
-            Tästä rakentuu moottoripyörän oma päiväkirja - Bikery
+            Tästä rakentuu moottoripyörän oma päiväkirja - Bikery. Päivitetty.
           </p>
           </div>
           <a
