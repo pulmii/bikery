@@ -1,0 +1,8 @@
+.menu {
+    background-color: #AEE6E6;
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 4em;
+    min-height: 4em;
+    align-items: center;
+  }
