@@ -1,7 +1,8 @@
 # Bikery - PWA for motorcycle expences
 
-## Project status
+### Project started at April 2019, planned to be published May-June 2019.
 
+## Project status
 - [x] Item-page (work in progress)
 - [x] Settings-page (work in progress)
 - [x] AddItem-page (work in progress)
