@@ -1,4 +1,4 @@
-# Bikery - PWA for motorcycle expences
+# Bikery - PWA for motorcycle expence management
 
 ### Project started at April 2019, planned to be published May-June 2019.
 
