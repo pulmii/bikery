@@ -1,9 +1,19 @@
 # Bikery - PWA for motorcycle expences
 
-- npm install @material-ui/icons
-- npm install moment --save
-- npm install uuid
-- npm install --save react-router-dom
+## Project status
+
+- [x] Item-page (work in progress)
+- [x] Settings-page (work in progress)
+- [x] AddItem-page (work in progress)
+- [ ] Stats-page
+- [ ] Login-page
+- [ ] Bike-page
+
+## Libraries & packages in use
+- Moment.js - date and time formatting in Javascript
+- UUID - generating unique ID's
+- @material-ui/icons - Icon library
+- React Router DOM - Router for PWA
 
 
 ### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
