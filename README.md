@@ -6,6 +6,7 @@
 - [x] Item-page (work in progress)
 - [x] Settings-page (work in progress)
 - [x] AddItem-page (work in progress)
+- [ ] UI details
 - [ ] Stats-page
 - [ ] Login-page
 - [ ] Bike-page
