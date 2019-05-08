@@ -1,6 +1,15 @@
 # Bikery - PWA for motorcycle expence management
 
-### Project started at April 2019, planned to be published May-June 2019.
+
+## Project schedule
+Week | Target
+------------ | -------------
+15, 2019 | React basics & tools
+16, 2019 | React modules, routings and creation the React project
+17, 2019 | Data storaging & authentication
+18, 2019 | Forms & charts
+19, 2019 | Publishing & documentation
+20, 2019 | Project deadline
 
 ## Project status
 - [x] Item-page (work in progress)
