@@ -1,8 +1,8 @@
 # Bikery - PWA for motorcycle expence management :motorcycle: 
 
-**FI** - Osana datanomitutkinnon Front End koodaaja-kokonaisuutta olen rakentanut näyttöprojektina applikaation moottoripyörän kuluseurannalle. Projekti on vielä kehitysvaiheessa.
+**FI** - Ihka ensimmäinen oma softaprojekti. Osana datanomitutkinnon Front End koodaaja-kokonaisuutta olen rakentanut näyttöprojektina applikaation moottoripyörän kuluseurannalle. Projekti on vielä kehitysvaiheessa.
 
-**EN** - As a school project I have created a motorcycle expence management application. Project is still under development.
+**EN** - This is my very first own software project. As a school project I have created a motorcycle expence management application. Project is still under development.
 
 ## Project schedule
 Week | Target
