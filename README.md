@@ -8,7 +8,7 @@
 Week | Target
 ------------ | -------------
 15, 2019 | React basics & tools
-16, 2019 | React modules, routings and creation the React project
+16, 2019 | React modules, routings, creation the React project & version control
 17, 2019 | Data storaging & authentication
 18, 2019 | Forms & charts
 19, 2019 | Publishing & documentation
