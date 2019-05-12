@@ -19,18 +19,28 @@ class App extends Component {
       selectList: ["Polttoaine", "Huolto", "Vakuutus", "Varaosat"]
     }
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
+    this.handleSelectListForm = this.handleSelectListForm.bind(this);
   }
 
   handleFormSubmit(newdata) {
     let storeddata = this.state.data.slice();
     storeddata.push(newdata);
     storeddata.sort((a,b) => { 
-      const aDate = new Date(a.maksupaiva);
-      const bDate = new Date(b.maksupaiva);
+      const aDate = new Date(a.kulupaiva);
+      const bDate = new Date(b.kulupaiva);
       return bDate.getTime() - aDate.getTime();
      } );
     this.setState({
       data: storeddata
+    });
+  }
+
+  handleSelectListForm (newitem) {
+    let selectList= this.state.selectList.slice();
+    selectList.push(newitem); 
+    selectList.sort();
+    this.setState({
+      selectList: selectList
     });
   }
 
@@ -41,7 +51,7 @@ class App extends Component {
           <Header />
           <Route path="/" exact render={() => <Items data={this.state.data} />} />
           <Route path="/stats" component={Stats} />
-          <Route path="/settings" render={() => <Settings selectList={this.state.selectList} /> } />
+          <Route path="/settings" render={() => <Settings selectList={this.state.selectList} onFormSubmit={this.handleSelectListForm} /> } />
           <Route path="/add" render={() => <AddItem onFormSubmit={this.handleFormSubmit} selectList={this.state.selectList} />} />
           <Menu />
         </div>

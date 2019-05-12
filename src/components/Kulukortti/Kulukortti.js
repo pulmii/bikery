@@ -5,7 +5,7 @@ import './Kulukortti.css';
 
 function Kulukortti(props) {
 
-    let maksupaiva = moment(props.data.maksupaiva);
+    let kulupaiva = moment(props.data.kulupaiva);
     let kausi = "";
     let keskiarvo;
 
@@ -24,13 +24,10 @@ function Kulukortti(props) {
           <div className="kulukortti__summa">{props.data.summa.toFixed(2)} €</div>
         </div>
         <div className="kulukortti__rivi">
-          <div className="kulukortti__maksupaiva">{maksupaiva.format("D.M.Y")}</div>
+          <div className="kulukortti__kulupaiva">{kulupaiva.format("D.M.Y")}</div>
           <div className="kulukortti__ajanjakso">{kausi}</div>
         </div>
-        <div className="kulukortti__rivi">
-          <div className="kulukortti__laskuttaja">{props.data.saaja}</div>
-          
-        </div>
+
         <div className="kulukortti__rivi">
         <div className="kulukortti__keskiarvo">{ keskiarvo ? keskiarvo.toFixed(2) + " € / kk" : ""}</div>
         <div className="kulukortti__kilometrit">{props.data.kilometrit + " km"}</div>

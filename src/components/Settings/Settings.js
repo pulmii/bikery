@@ -8,7 +8,9 @@ function Settings(props) {
 
     const handleSubmit = function(event) {
       event.preventDefault();
-
+      let kulutyyppi = event.target.elements.kulutyyppi.value;
+      props.onFormSubmit(kulutyyppi);
+      event.target.elements.kulutyyppi.value = "";
     }
 
     return (
@@ -16,13 +18,16 @@ function Settings(props) {
         <div className="settings">
           <h2>Settings</h2>
           <h3>Kulutyypit </h3>
-          {props.selectList.map(item => <div key={item}>{item}</div>)}
-          <form onSubmit={handleSubmit}>
-            <div className="settingsForm">
-              <input type="text" name="kulutyyppi" />
-              <Button type="submit" primary>LISÄÄ</Button>
-            </div>
-          </form>
+          <div className="settings__items">
+            {props.selectList.map(item => <div key={item}>{item}</div>)}
+
+            <form onSubmit={handleSubmit}>
+              <div className="settingsForm">
+                <input type="text" name="kulutyyppi" />
+                <Button type="submit" primary>LISÄÄ</Button>
+              </div>
+            </form>
+          </div>
         </div>
       </Content>
   

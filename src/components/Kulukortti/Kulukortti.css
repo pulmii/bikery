@@ -12,7 +12,7 @@
    font-weight: bold;
 }
  
-.kulukortti__maksupaiva, .kulukortti__ajanjakso,
+.kulukortti__kulupaiva, .kulukortti__ajanjakso,
 .kulukortti__laskuttaja, .kulukortti__keskiarvo, .kulukortti__kilometrit {
    font-size: 85%;
    color: #666;

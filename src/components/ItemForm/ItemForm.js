@@ -13,13 +13,10 @@ class ItemForm extends React.Component {
         super(props);
         this.state = {
             data: {
-                tyyppi: "Vesi",
-                summa: 0,
-                kilometrit: 0,
-                maksupaiva: "",
-                kaudenalku: "",
-                kaudenloppu: "",
-                saaja: ""
+                tyyppi: "",
+                summa: "",
+                kilometrit: "",
+                kulupaiva: "",
              }
         };
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -66,7 +63,7 @@ class ItemForm extends React.Component {
                   <label htmlFor="name">Kulutyyppi</label>
                   <select name="tyyppi" value={this.state.data.tyyppi} onChange={this.handleInputChange}>
 
-                    {this.props.selectList.map(item => <option value={item}>{item}</option>)}
+                    {this.props.selectList.map(item => <option value={item} key={item}>{item}</option>)}
 
                   </select>                
                 </div>
@@ -78,33 +75,15 @@ class ItemForm extends React.Component {
                   <input type="number" name="summa" step="0.01" value={this.state.data.summa} onChange={this.handleInputChange} />
                 </div>
                 <div>
-                  <label htmlFor="maksupaiva">Maksupäivä</label>
-                  <input type="date" name="maksupaiva" size="10" value={this.state.data.maksupaiva} onChange={this.handleInputChange} />
+                  <label htmlFor="kulupaiva">Kulupäivä</label>
+                  <input type="date" name="kulupaiva" size="10" value={this.state.data.kulupaiva} onChange={this.handleInputChange} />
                 </div>
               </div>
               
               <div className="itemform__row">
                 <div>
-                  <label htmlFor="saaja">Kilometrit</label>
-                  <input type="text" name="kilometrit" value={this.state.data.saaja} onChange={this.handleInputChange}/>
-                </div>
-              </div>
-  
-              <div className="itemform__row">
-                <div>
-                  <label htmlFor="kaudenalku">Laskutuskauden alku</label>
-                  <input type="date" name="kaudenalku" size="10" value={this.state.data.kaudenalku} onChange={this.handleInputChange} />
-                </div>
-                <div>
-                  <label htmlFor="kaudenloppu">Laskutuskauden loppu</label>
-                  <input type="date" name="kaudenloppu" size="10" value={this.state.data.kaudenloppu} onChange={this.handleInputChange} />          
-                </div>
-              </div>
-  
-              <div className="itemform__row">
-                <div>
-                  <label htmlFor="saaja">Laskuttaja</label>
-                  <input type="text" name="saaja" value={this.state.data.saaja} onChange={this.handleInputChange}/>
+                  <label htmlFor="kilometrit">Kilometrit</label>
+                  <input type="text" name="kilometrit" value={this.state.data.kilometrit} onChange={this.handleInputChange}/>
                 </div>
               </div>
   
