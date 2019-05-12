@@ -18,7 +18,7 @@ Week | Target
 - [x] UI design (work in progress)
 - [x] Item-page (work in progress)
 - [x] Settings-page (work in progress)
-- [x] AddItem-page (work in progress)
+- [x] AddItem-page 
 - [x] UI details (work in progress)
 - [ ] Stats-page
 - [ ] Login-page
