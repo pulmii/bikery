@@ -11,17 +11,19 @@ class ItemForm extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            data: {
+        const data = props.data ? props.data : {
                 tyyppi: "",
                 summa: "",
                 kilometrit: "",
                 kulupaiva: "",
              }
+        this.state = {
+            data: data
         };
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleCancel = this.handleCancel.bind(this);
+        this.handleDeleteItem = this.handleDeleteItem.bind(this);
     }
 
     handleInputChange(event) {
@@ -47,9 +49,15 @@ class ItemForm extends React.Component {
         console.log("lähetä lomake");
         let data = Object.assign({}, this.state.data);
         data.summa = parseFloat(data.summa);
-        data.id = uuid.v4();
+        data.id = data.id ? data.id : uuid.v4();
         this.props.onFormSubmit(data);
         this.props.history.push("/");
+    }
+
+    handleDeleteItem(event) {
+      event.preventDefault();
+      this.props.onDeleteItem(this.state.data.id);
+      this.props.history.push("/");
     }
 
     render() {
@@ -92,10 +100,12 @@ class ItemForm extends React.Component {
                   <Button onClick={this.handleCancel}>PERU</Button>
                 </div>
                 <div>
-                  <Button type="submit" secondary>LISÄÄ</Button>                  
+                  <Button type="submit" secondary>{this.state.data.id ? "TALLENNA" : "LISÄÄ"}</Button>                  
                 </div>
               </div>
   
+              {this.props.onDeleteItem ? <Button onClick={this.onDeleteItem}>POISTA</Button> : ""}
+
             </div>  
   
           </form>

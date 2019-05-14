@@ -21,11 +21,17 @@ class App extends Component {
     }
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleSelectListForm = this.handleSelectListForm.bind(this);
+    this.handleDeleteItem = this.handleDeleteItem.bind(this);
   }
 
   handleFormSubmit(newdata) {
     let storeddata = this.state.data.slice();
+    const index = storeddata.findIndex(item => item.id === newdata.id);
+    if (index >= 0) {
+      storeddata[index] = newdata;
+    } else {
     storeddata.push(newdata);
+    }
     storeddata.sort((a,b) => { 
       const aDate = new Date(a.kulupaiva);
       const bDate = new Date(b.kulupaiva);
@@ -45,6 +51,14 @@ class App extends Component {
     });
   }
 
+  handleDeleteItem (id) {
+    let storeddata = this.state.data.slice();
+    storeddata = storeddata.filter(item => item.id !== id);
+    this.setState({
+      data: storeddata 
+    });
+  }
+
   render() {
     return (
       <Router>
@@ -54,7 +68,11 @@ class App extends Component {
           <Route path="/stats" component={Stats} />
           <Route path="/settings" render={() => <Settings selectList={this.state.selectList} onFormSubmit={this.handleSelectListForm} /> } />
           <Route path="/add" render={() => <AddItem onFormSubmit={this.handleFormSubmit} selectList={this.state.selectList} />} />
-          <Route path="/edit/:id" render={(props) => <EditItem data={this.state.data} selectList={this.state.selectList} {...props}/>} />
+          <Route path="/edit/:id" render={(props) => <EditItem data={this.state.data} 
+                                                               selectList={this.state.selectList} 
+                                                               onFormSubmit={this.handleFormSubmit} 
+                                                               onDeleteItem={this.handleDeleteItem}
+                                                               {...props}/>} />
           <Menu />
         </div>
       </Router>
