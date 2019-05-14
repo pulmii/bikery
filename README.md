@@ -32,6 +32,7 @@ Week | Target
 - UUID - generating unique ID's
 - @material-ui/icons - Icon library
 - React Router DOM - Router for PWA
+- Chart.js - Javascript charting
 
 
 ### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
