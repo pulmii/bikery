@@ -19,10 +19,11 @@ Week | Target
 - [x] Item-page (work in progress)
 - [x] Settings-page (work in progress)
 - [x] AddItem-page 
+- [x] EditItem-page (work in progress)
 - [x] UI details (work in progress)
 - [ ] Stats-page
 - [ ] Login-page
-- [ ] Bike-page
+- [ ] Bike-page (optional)
 
 ## Libraries & packages in use
 - Moment.js - date and time formatting in Javascript
