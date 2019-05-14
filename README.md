@@ -17,6 +17,7 @@ Week | Target
 20, 2019 | Project deadline
 
 ## Project status
+- [x] Project plan
 - [x] UI design (work in progress)
 - [x] Item-page (work in progress)
 - [x] Settings-page (work in progress)
