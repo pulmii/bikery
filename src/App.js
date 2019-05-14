@@ -54,7 +54,7 @@ class App extends Component {
           <Route path="/stats" component={Stats} />
           <Route path="/settings" render={() => <Settings selectList={this.state.selectList} onFormSubmit={this.handleSelectListForm} /> } />
           <Route path="/add" render={() => <AddItem onFormSubmit={this.handleFormSubmit} selectList={this.state.selectList} />} />
-          <Route path="/edit" render={() => <EditItem selectList={this.state.selectList}/>} />
+          <Route path="/edit/:id" render={(props) => <EditItem data={this.state.data} selectList={this.state.selectList} {...props}/>} />
           <Menu />
         </div>
       </Router>

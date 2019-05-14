@@ -38,7 +38,7 @@ function Kulukortti(props) {
             </div>
           </div>
         <div className="kulukortti__linkki">
-          <Link to={"/edit/" + props.data.id}><KeyboardArrowRight /></Link>
+          <Link to={"/edit/"}><KeyboardArrowRight /></Link>
         </div>
       </div>
     );  
