@@ -4,6 +4,8 @@
 
 **EN** - This is my very first own software project. As a school project I have created a motorcycle expence management application. Project is still under development.
 
+Contact: miina.pulkkinen@edu.sasky.fi
+
 ## Project schedule
 Week | Target
 ------------ | -------------
@@ -19,10 +21,10 @@ Week | Target
 - [x] Item-page (work in progress)
 - [x] Settings-page (work in progress)
 - [x] AddItem-page 
-- [x] UI details (work in progress)
+- [x] EditItem-page (work in progress)
 - [ ] Stats-page
 - [ ] Login-page
-- [ ] Bike-page
+- [ ] Bike-page (optional)
 
 ## Libraries & packages in use
 - Moment.js - date and time formatting in Javascript
