@@ -9,6 +9,7 @@ import Stats from './components/Stats/Stats';
 import Settings from './components/Settings/Settings';
 import Menu from './components/Menu/Menu';
 import AddItem from './components/AddItem/AddItem';
+import EditItem from './components/EditItem/EditItem';
 
 class App extends Component {
 
@@ -53,6 +54,7 @@ class App extends Component {
           <Route path="/stats" component={Stats} />
           <Route path="/settings" render={() => <Settings selectList={this.state.selectList} onFormSubmit={this.handleSelectListForm} /> } />
           <Route path="/add" render={() => <AddItem onFormSubmit={this.handleFormSubmit} selectList={this.state.selectList} />} />
+          <Route path="/edit" render={() => <EditItem selectList={this.state.selectList}/>} />
           <Menu />
         </div>
       </Router>

@@ -1,6 +1,7 @@
 .kulukortti {
-   padding: 1.5em;
+ /*  padding: 1em 0em 1em 1em; */
    border-bottom: 1px solid #ECE7E5;
+   display: flex;
 }
  
 .kulukortti__rivi {
@@ -16,4 +17,25 @@
 .kulukortti__laskuttaja, .kulukortti__keskiarvo, .kulukortti__kilometrit {
    font-size: 85%;
    color: #666;
+}
+
+.kulukortti > div {
+   flex: 1 1 auto;
+   padding: 1em;
+}
+
+.kulukortti__linkki {
+   max-width: 0.7em;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0,0,0,0.1);
+}
+
+.kulukortti:hover .kulukortti__linkki {
+   display: flex; 
+}
+
+.kulukortti__linkki a {
+   color: #000;
 }
