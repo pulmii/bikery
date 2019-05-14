@@ -20,7 +20,6 @@ Week | Target
 - [x] Settings-page (work in progress)
 - [x] AddItem-page 
 - [x] EditItem-page (work in progress)
-- [x] UI details (work in progress)
 - [ ] Stats-page
 - [ ] Login-page
 - [ ] Bike-page (optional)
