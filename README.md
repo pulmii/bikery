@@ -4,7 +4,7 @@
 
 **EN** - This is my very first own software project. As a school project I have created a motorcycle expence management application. Project is still under development.
 
-Contact: mailto:miina.pulkkinen@edu.sasky.fi
+Contact: miina.pulkkinen@edu.sasky.fi
 
 ## Project schedule
 Week | Target
