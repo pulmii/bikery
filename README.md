@@ -43,7 +43,7 @@ Week | Target
 2. Kirjautuminen vie sinut suoraan sovelluksen päänäkymään, jossa näet listauksen kirjaamistasi kuluista. 
 3. Alareunasta löydät menun, jonka kuvakkeiden avulla pääset siirtymään sovelluksessa näkymältä toiselle.
 4. Oikean alakulman plus-nappulasta pääset lisäämään uuden kulun. Kulukategorioita pääset lisäämään valitsemalla menusta rattaan kuvan.
-5. Pääset muokkaamaan jo aiemmin kirjattua kulua valitsemalla kulun listalla ja tekemällä halutut muutokset erillisessä muutos-näkymässä.
+5. Pääset muokkaamaan jo aiemmin kirjautua kulua valitsemalla kulun listalla ja tekemällä halutut muutokset erillisessä muutos-näkymässä.
 
 ### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
