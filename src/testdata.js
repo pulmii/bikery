@@ -1,3 +1,4 @@
+//testidatan luonti
 const testdata = [
     { id: "1",
     tyyppi: 'Polttoaine', 
