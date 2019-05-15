@@ -1,7 +1,9 @@
 import React from 'react';
 
+//tuodaan buttonien tyylimäärittelyt
 import './buttons.css';
 
+//määritellään secondary ja primary-buttoneille arvot
 const classNames = classnames => classnames.join(" ");
 
 const Button = ({ className = "", primary, secondary, ...props}) => {

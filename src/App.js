@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+
+//tuodaan käytettävät kirjastot
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+//tuodaan tyylimäärittelyt
 import './App.css';
+
+//tuodaan testidata
 import testdata from './testdata';
 
+//tuodaan sovelluksen komponentit
 import Header from './components/Header/Header';
 import Items from './components/Items/Items';
 import Stats from './components/Stats/Stats';
@@ -11,8 +18,10 @@ import Menu from './components/Menu/Menu';
 import AddItem from './components/AddItem/AddItem';
 import EditItem from './components/EditItem/EditItem';
 
+
 class App extends Component {
 
+  //luodaan konstruktori datalle
   constructor(props) {
     super(props);
     this.state = {
@@ -24,6 +33,7 @@ class App extends Component {
     this.handleDeleteItem = this.handleDeleteItem.bind(this);
   }
 
+  //luodaan käsittelijä uuden datan lisäämiselle
   handleFormSubmit(newdata) {
     let storeddata = this.state.data.slice();
     const index = storeddata.findIndex(item => item.id === newdata.id);
@@ -42,6 +52,7 @@ class App extends Component {
     });
   }
 
+  //luodaan käsittelijä datan muokkaamiselle
   handleSelectListForm (newitem) {
     let selectList= this.state.selectList.slice();
     selectList.push(newitem); 
@@ -51,6 +62,7 @@ class App extends Component {
     });
   }
 
+  //luodaan käsittelijä datan poistamiselle
   handleDeleteItem (id) {
     let storeddata = this.state.data.slice();
     storeddata = storeddata.filter(item => item.id !== id);
@@ -59,6 +71,7 @@ class App extends Component {
     });
   }
 
+  //renderöidään Router
   render() {
     return (
       <Router>
@@ -80,4 +93,5 @@ class App extends Component {
   }
 }
 
+//exportataan App
 export default App;

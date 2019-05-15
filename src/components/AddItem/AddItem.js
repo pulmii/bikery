@@ -1,10 +1,13 @@
 import React from 'react';
 
+//tuodaan käytettävät komponentit
 import Content from '../Content/Content';
 import ItemForm from '../ItemForm/ItemForm';
 
+//tuodaan tyylimäärittelyt
 import './AddItem.css';
 
+//palautetaan lomakkeelle syötetyt uuden kulun tiedot
 function AddItem(props) {
     return (
       <Content>

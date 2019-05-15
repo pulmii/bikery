@@ -1,9 +1,13 @@
 import React from 'react';
-import Button from '../buttons';
 
+//tuodaan käytettävät komponentit
+import Button from '../buttons';
 import Content from '../Content/Content';
+
+//tuodaan tyylimäärittelyt
 import './Settings.css';
 
+//luodaan käsittelijä ja tulostus kulutyyppien hallinnoinnille
 function Settings(props) {
 
     const handleSubmit = function(event) {

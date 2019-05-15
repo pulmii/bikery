@@ -1,10 +1,13 @@
 import React from 'react';
 
+//tuodaan käytettävät komponentit
 import Content from '../Content/Content';
 import ItemForm from '../ItemForm/ItemForm';
 
+//tuodaan tyylimäärittelyt
 import './EditItem.css';
 
+//luodaan logiikka ja tulostus datan muokkaamiselle
 function EditItem(props) {
 
     const index = props.data.findIndex(item => item.id === props.match.params.id);

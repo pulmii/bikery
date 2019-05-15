@@ -1,13 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
+//tuodaan käytettävät kirjastot
+import { Link } from 'react-router-dom';
 import Motorcycle from '@material-ui/icons/Motorcycle';
 import ViewList from '@material-ui/icons/ViewList';
 import Timeline from '@material-ui/icons/Timeline';
 import Settings from '@material-ui/icons/Settings';
 
+//tuodaan tyylimäärittelyt
 import './Menu.css';
 
+//luodaan Menu-reititykset
 function Menu(props) {
     return (
        <div className="menu">

@@ -1,11 +1,14 @@
 import React from 'react';
-import moment from 'moment';
 
+//tuodaan käytettävät kirjastot
+import moment from 'moment';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import { Link } from 'react-router-dom';
 
+//tuodaan tyylimäärittely
 import './Kulukortti.css';
 
+//luodaan logiikka ja tulostus kulukortille, vaatii vielä tarkennusta ja korjausta
 function Kulukortti(props) {
 
     let kulupaiva = moment(props.data.kulupaiva);

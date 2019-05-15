@@ -1,12 +1,14 @@
 import React from 'react';
+
+//tuodaan käytettävät kirjastot
 import { withRouter } from 'react-router';
 import uuid from 'uuid'; 
-
-
 import Button from '../buttons';
 
+//tuodaan tyylimäärittelyt
 import './ItemForm.css';
 
+//luodaan luokka ja käsittelijät lomakkeelle
 class ItemForm extends React.Component {
 
     constructor(props) {
@@ -60,6 +62,7 @@ class ItemForm extends React.Component {
       this.props.history.push("/");
     }
 
+    //renderöidään lomakkeen tiedot
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
