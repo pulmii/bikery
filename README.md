@@ -2,7 +2,7 @@
 
 **FI** - Ihka ensimmäinen oma softaprojekti. Osana datanomitutkinnon Front End koodaaja-kokonaisuutta olen rakentanut näyttöprojektina applikaation moottoripyörän kuluseurannalle. Projekti on vielä kehitysvaiheessa.
 
-Projektin tarkoituksena on suunnitella ja toteuttaa React.js:n avulla PWA-tyyppinen sovellus. Sovelluksen avulla on tarkoitus seurata moottoripyörän kuluja ja koostaa niitä yhteen. Kouluprojektina julkaistava sovellus sisältää seuraavat sivut: Login, Overview, Add, Edit ja Stats. Myöhempänä kehityskohteena on lisätä mahdollisesti useampia moottoripyöriä yhdelle käyttäjätilille ja laajentaa statistiikkaa liittyen kuluihin ja ajettuihin kilometreihin.
+Projektin tarkoituksena on suunnitella ja toteuttaa React.js:n avulla PWA-tyyppinen sovellus. Sovelluksen avulla on tarkoitus seurata moottoripyörän kuluja ja koostaa niitä yhteen. Kouluprojektina julkaistava sovellus sisältää seuraavat sivut: Login, Overview, Add, Edit, Settings ja Stats. Myöhempänä kehityskohteena on lisätä mahdollisesti useampia moottoripyöriä yhdelle käyttäjätilille ja laajentaa statistiikkaa liittyen kuluihin ja ajettuihin kilometreihin.
 
 **EN** - This is my very first own software project. As a school project I have created a motorcycle expence management application. Project is still under development.
 
@@ -37,6 +37,13 @@ Week | Target
 - React Router DOM - Router for PWA
 - Chart.js - Javascript charting
 
+## How to use?
+**FI** 
+1. Linkki sovellukseen julkaistaan myöhemmin. Voit kirjautua sovellukseen käyttäen Googlen autentikointia. 
+2. Kirjautuminen vie sinut suoraan sovelluksen päänäkymään, jossa näet listauksen kirjaamistasi kuluista. 
+3. Alareunasta löydät menun, jonka kuvakkeiden avulla pääset siirtymään sovelluksessa näkymältä toiselle.
+4. Oikean alakulman plus-nappulasta pääset lisäämään uuden kulun. Kulukategorioita pääset lisäämään valitsemalla menusta rattaan kuvan.
+5. Pääset muokkaamaan jo aiemmin kirjattua kulua valitsemalla kulun listalla ja tekemällä halutut muutokset erillisessä muutos-näkymässä.
 
 ### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
