@@ -15,7 +15,7 @@ Week | Target
 16, 2019 | React modules, routings, creation the React project & version control
 17, 2019 | Data storaging & authentication
 18, 2019 | Forms & charts
-19, 2019 | Publishing & documentation
+19, 2019 | Publishing & documentation, testing
 20, 2019 | Project deadline
 
 ## Project status
@@ -30,12 +30,13 @@ Week | Target
 - [ ] Login-page
 - [ ] Bike-page (optional)
 
-## Libraries & packages in use
+## Libraries & tools
 - Moment.js - date and time formatting in Javascript
 - UUID - generating unique ID's
 - @material-ui/icons - Icon library
 - React Router DOM - Router for PWA
 - Chart.js - Javascript charting
+- Lighthouse for testing
 
 ## How to use?
 **FI** 
