@@ -25,10 +25,11 @@ Week | Target
 - [x] Settings-page (work in progress)
 - [x] AddItem-page 
 - [x] EditItem-page (work in progress)
-- [ ] Firebase&Authentication
+- [x] Firebase&Authentication
 - [ ] Stats-page
 - [ ] Login-page
 - [ ] Bike-page (optional)
+- [x] Publishing
 
 ## Libraries & tools
 - Moment.js - date and time formatting in Javascript
