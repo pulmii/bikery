@@ -26,5 +26,18 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "**FI** - Ihka ensimmäinen oma softaprojekti. Osana datanomitutkinnon Front End koodaaja-kokonaisuutta olen rakentanut näyttöprojektina applikaation moottoripyörän kuluseurannalle. Projekti on vielä kehitysvaiheessa.",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pulmii/bikery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pulmii/bikery/issues"
+  },
+  "homepage": "https://github.com/pulmii/bikery#readme"
 }
