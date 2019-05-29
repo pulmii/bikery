@@ -18,7 +18,6 @@ import Menu from './components/Menu/Menu';
 import AddItem from './components/AddItem/AddItem';
 import EditItem from './components/EditItem/EditItem';
 
-
 class App extends Component {
 
   //luodaan konstruktori datalle
@@ -28,10 +27,12 @@ class App extends Component {
       data: testdata, 
       selectList: ["Polttoaine", "Huolto", "Vakuutus", "Varaosat"]
     }
+
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleSelectListForm = this.handleSelectListForm.bind(this);
     this.handleDeleteItem = this.handleDeleteItem.bind(this);
   }
+
 
   //luodaan käsittelijä uuden datan lisäämiselle
   handleFormSubmit(newdata) {
@@ -50,6 +51,7 @@ class App extends Component {
     this.setState({
       data: storeddata
     });
+    this.refData.doc('joku').set({});
   }
 
   //luodaan käsittelijä datan muokkaamiselle
@@ -78,7 +80,7 @@ class App extends Component {
         <div className="App">
           <Header />
           <Route path="/" exact render={() => <Items data={this.state.data} />} />
-          <Route path="/stats" component={Stats} />
+          <Route path="/stats" render={() => <Stats data={this.state.data} /> } />
           <Route path="/settings" render={() => <Settings selectList={this.state.selectList} onFormSubmit={this.handleSelectListForm} /> } />
           <Route path="/add" render={() => <AddItem onFormSubmit={this.handleFormSubmit} selectList={this.state.selectList} />} />
           <Route path="/edit/:id" render={(props) => <EditItem data={this.state.data} 
