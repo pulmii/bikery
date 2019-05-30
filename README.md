@@ -26,7 +26,7 @@ Week | Target
 - [x] AddItem-page 
 - [x] EditItem-page (work in progress)
 - [x] Firebase&Authentication
-- [ ] Stats-page
+- [x] Stats-page
 - [ ] Login-page
 - [ ] Bike-page (optional)
 - [x] Publishing
