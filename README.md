@@ -1,6 +1,6 @@
 # Bikery - motorcycle expence management app :motorcycle: 
 
-**FI** - Ihka ensimmäinen oma softaprojekti. Osana datanomitutkinnon Front End koodaaja-kokonaisuutta olen rakentanut näyttöprojektina applikaation moottoripyörän kuluseurannalle. Projekti on vielä kehitysvaiheessa.
+**FI** - Ihka ensimmäinen oma softaprojekti. Osana datanomitutkinnon Front End koodaaja-kokonaisuutta olen rakentanut näyttöprojektina applikaation moottoripyörän kuluseurannalle. Opintopolku vei viidessä viikossa Reactin alkeista kokonaisen sovelluksen julkaisuun. Projekti on palautettu näyttötehtävänä, arvosana 4/5.
 
 Projektin tarkoituksena on suunnitella ja toteuttaa React.js:n avulla PWA-tyyppinen sovellus. Sovelluksen avulla on tarkoitus seurata moottoripyörän kuluja ja koostaa niitä yhteen. Kouluprojektina julkaistava sovellus sisältää seuraavat sivut: Login, Overview, Add, Edit, Settings ja Stats. Myöhempänä kehityskohteena on lisätä mahdollisesti useampia moottoripyöriä yhdelle käyttäjätilille ja laajentaa statistiikkaa liittyen kuluihin ja ajettuihin kilometreihin.
 
