@@ -4,7 +4,7 @@
 
 Projektin tarkoituksena on suunnitella ja toteuttaa React.js:n avulla PWA-tyyppinen sovellus. Sovelluksen avulla on tarkoitus seurata moottoripyörän kuluja ja koostaa niitä yhteen. Kouluprojektina julkaistava sovellus sisältää seuraavat sivut: Login, Overview, Add, Edit, Settings ja Stats. Myöhempänä kehityskohteena on lisätä mahdollisesti useampia moottoripyöriä yhdelle käyttäjätilille ja laajentaa statistiikkaa liittyen kuluihin ja ajettuihin kilometreihin.
 
-**EN** - This is my very first own software project. As a school project I have created a motorcycle expence management application. Project is still under development.
+**EN** - This is my very first own software project. As a school project I have created a motorcycle expence management application. 
 
 Contact: miina.pulkkinen2@edu.sasky.fi
 
@@ -20,14 +20,14 @@ Week | Target
 
 ## Project status
 - [x] Project plan
-- [x] UI design (work in progress)
-- [x] Item-page (work in progress)
-- [x] Settings-page (work in progress)
+- [x] UI design 
+- [x] Item-page 
+- [x] Settings-page 
 - [x] AddItem-page 
-- [x] EditItem-page (work in progress)
+- [x] EditItem-page 
 - [x] Firebase&Authentication
 - [x] Stats-page
-- [ ] Login-page
+- [ ] Login-page (optional)
 - [ ] Bike-page (optional)
 - [x] Publishing
 
